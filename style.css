@@ -1,0 +1,342 @@
+/* Global styles for the LoRaFlexSim website */
+body {
+    margin: 0;
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background-color: #f7fbff;
+}
+
+a {
+    color: #006699;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+header {
+    position: relative;
+    background-color: #002d40;
+    color: white;
+    padding: clamp(0.7rem, 2vw, 1rem) clamp(0.9rem, 4vw, 2rem);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.site-nav {
+    margin-left: auto;
+}
+
+header .logo {
+    font-size: 1.6rem;
+    font-weight: bold;
+}
+
+.nav-toggle {
+    display: none;
+    margin-left: auto;
+    border: 1px solid rgba(255, 255, 255, 0.6);
+    border-radius: 6px;
+    background: transparent;
+    color: white;
+    padding: 0.35rem 0.55rem;
+    font-size: 1.2rem;
+    line-height: 1;
+    cursor: pointer;
+}
+
+
+.hamburger {
+    display: inline-flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 0.2rem;
+}
+
+.hamburger-line {
+    width: 1.2rem;
+    height: 2px;
+    background-color: currentColor;
+    border-radius: 1px;
+}
+
+.nav-toggle:focus-visible,
+nav a:focus-visible {
+    outline: 2px solid #00a6c4;
+    outline-offset: 2px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+nav li {
+    margin-left: 1.5rem;
+}
+
+nav a {
+    color: white;
+    font-weight: 500;
+}
+
+/* Highlight current navigation link */
+.active {
+    border-bottom: 2px solid #00a6c4;
+}
+
+.hero {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    padding: clamp(1.5rem, 5vw, 4rem) clamp(0.9rem, 4vw, 2rem);
+    background: linear-gradient(90deg, #00a6c4 0%, #006699 100%);
+    color: white;
+}
+
+.hero-text {
+    flex: 1 1 50%;
+    padding-right: 2rem;
+}
+
+.hero-text h1 {
+    font-size: clamp(1.65rem, 5.4vw, 2.5rem);
+    margin-bottom: 1rem;
+    line-height: 1.2;
+}
+
+.hero-text p {
+    font-size: clamp(0.96rem, 2.4vw, 1.1rem);
+    max-width: 40rem;
+}
+
+.hero-img {
+    flex: 1 1 40%;
+    text-align: center;
+}
+
+.hero-img img {
+    width: min(100%, clamp(220px, 45vw, 470px));
+    max-width: 100%;
+    height: auto;
+    max-height: min(52vh, 420px);
+    object-fit: contain;
+}
+
+section {
+    padding: clamp(1.5rem, 4vw, 3rem) clamp(0.9rem, 4vw, 2rem);
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+section h2 {
+    color: #006699;
+    margin-top: 0;
+    font-size: clamp(1.3rem, 3.8vw, 2rem);
+}
+
+section ul {
+    margin-left: 1.5rem;
+}
+
+p,
+li {
+    font-size: clamp(0.95rem, 2.2vw, 1.06rem);
+    overflow-wrap: anywhere;
+    word-break: break-word;
+}
+
+pre,
+code {
+    font-family: "Cascadia Mono", "Consolas", "Fira Code", "Courier New", monospace;
+}
+
+pre {
+    max-width: 100%;
+    overflow-x: auto;
+    box-sizing: border-box;
+    background: #f1f6fa;
+    border: 1px solid #d0e3ee;
+    border-radius: 8px;
+    padding: 0.85rem 1rem;
+}
+
+code {
+    max-width: 100%;
+    overflow-x: auto;
+    font-size: 0.95em;
+}
+
+pre code {
+    display: block;
+    font-size: 0.92rem;
+    line-height: 1.45;
+}
+
+.features {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 2rem;
+}
+
+.feature {
+    background: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    padding: clamp(0.9rem, 2.8vw, 1.5rem);
+    transition: transform 0.2s ease-in-out;
+}
+
+.feature:hover {
+    transform: translateY(-4px);
+}
+
+.feature h3 {
+    color: #006699;
+    margin-bottom: 0.5rem;
+    font-size: clamp(1.05rem, 2.8vw, 1.2rem);
+}
+
+.feature p {
+    font-size: clamp(0.9rem, 2.2vw, 0.98rem);
+}
+
+.site-footer {
+    background-color: #002d40;
+    color: white;
+    text-align: center;
+    padding: 2rem;
+    margin-top: 3rem;
+}
+
+.footer-copy {
+    margin: 0;
+}
+
+.footer-links {
+    margin: 1rem 0 0;
+}
+
+.footer-separator {
+    display: inline-block;
+    margin: 0 0.45rem;
+    color: #9bd5e5;
+}
+
+.site-footer a {
+    color: #9bd5e5;
+}
+
+@media (max-width: 768px) {
+    header {
+        flex-wrap: wrap;
+        gap: 0.75rem;
+        padding: clamp(0.7rem, 3vw, 1rem);
+    }
+
+    .nav-toggle {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .site-nav {
+        display: none;
+        width: 100%;
+        margin-left: 0;
+    }
+
+    .site-nav.is-open {
+        display: block;
+    }
+
+    nav ul {
+        flex-direction: column;
+        gap: 0.2rem;
+        background-color: #01374d;
+        border-radius: 8px;
+        padding: 0.8rem;
+    }
+
+    nav li {
+        margin-left: 0;
+    }
+
+    nav a {
+        display: block;
+        padding: 0.45rem 0.35rem;
+    }
+
+    .hero {
+        flex-direction: column;
+        padding: clamp(1.4rem, 6vw, 3rem) clamp(0.8rem, 3.2vw, 1rem);
+    }
+
+    .hero-text {
+        padding-right: 0;
+        margin-bottom: clamp(1rem, 4vw, 2rem);
+    }
+
+    section {
+        padding: clamp(1.3rem, 5vw, 2rem) clamp(0.8rem, 3.5vw, 1.1rem);
+    }
+
+    pre {
+        padding: 0.7rem 0.75rem;
+        font-size: 0.9rem;
+    }
+
+    pre code {
+        font-size: 0.88rem;
+    }
+}
+
+@media (max-width: 480px) {
+    header {
+        padding: 0.65rem 0.75rem;
+        align-items: flex-start;
+    }
+
+    header .logo {
+        font-size: 1.35rem;
+    }
+
+    .nav-toggle {
+        padding: 0.3rem 0.45rem;
+    }
+
+    nav ul {
+        padding: 0.65rem;
+    }
+
+    nav a {
+        font-size: 0.95rem;
+    }
+
+    .hero {
+        padding: 1.2rem 0.75rem;
+    }
+
+    section {
+        padding: 1.15rem 0.75rem;
+    }
+
+    pre {
+        padding: 0.62rem 0.65rem;
+        font-size: 0.85rem;
+    }
+
+    code {
+        font-size: 0.9em;
+    }
+
+    pre code {
+        font-size: 0.84rem;
+    }
+}

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Research – LoRaFlexSim</title>
+    <link rel="icon" type="image/png" href="assets/favicon.png">
+    <link rel="apple-touch-icon" href="assets/favicon.png">
+    <link rel="manifest" href="site.webmanifest">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="logo">LoRaFlexSim</div>
+        <button class="nav-toggle" type="button" aria-label="Afficher le menu principal" aria-expanded="false" aria-controls="primary-navigation">
+            <span class="hamburger" aria-hidden="true">
+                <span class="hamburger-line"></span>
+                <span class="hamburger-line"></span>
+                <span class="hamburger-line"></span>
+            </span>
+        </button>
+        <nav id="primary-navigation" class="site-nav">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="paper.html">Paper</a></li>
+                <li><a href="documentation.html">Documentation</a></li>
+                <li><a href="howto/index.html">How To</a></li>
+                <li><a href="research.html">Research</a></li>
+                <li><a href="authors.html">Authors</a></li>
+                <li><a href="https://github.com/LoRaFlexSim/LoRaFlexSim" target="_blank" rel="noopener noreferrer">GitHub</a></li>
+            </ul>
+        </nav>
+    </header>
+    <section>
+        <h2>Research with LoRaFlexSim</h2>
+        <p>LoRaFlexSim provides a rich environment for exploring performance and adaptive strategies in LoRaWAN networks. The simulator reproduces LoRaWAN behaviours and extends them with features such as multichannel operation, device classes A/B/C, Over‑the‑Air Activation (OTAA), mobility models, Adaptive Data Rate (ADR) algorithms, per‑node energy accounting and interactive dashboards.</p>
+        <p>Possible research topics include:</p>
+        <ul>
+            <li><strong>Reliability analysis</strong> – study packet delivery ratios, collision patterns and the impact of spreading factors and bandwidth on network performance.</li>
+            <li><strong>Energy optimisation</strong> – quantify the energy consumed in transmission, reception and idle states per node to prolong device lifetime.</li>
+            <li><strong>Adaptive Data Rate algorithms</strong> – evaluate and design ADR strategies (average, maximum, EXPLoRa‑AT, machine‑learning based) to optimise airtime and transmission power.</li>
+            <li><strong>Mobility and spatial distribution</strong> – simulate networks with mobile nodes using realistic movement models and analyse coverage and latency impacts.</li>
+            <li><strong>LoRaWAN extensions</strong> – experiment with dynamic channel allocation, duty‑cycle enforcement, multi‑hop relaying and new MAC protocols.</li>
+        </ul>
+        <p>The research community is invited to build upon LoRaFlexSim and contribute new modules. The simulator’s architecture supports integration of machine learning and reinforcement learning techniques for intelligent resource management.</p>
+        <p>For more details, consult the publications listed on the <a href="index.html#publications">home page</a>.</p>
+    </section>
+    <footer class="site-footer">
+        <p class="footer-copy">© 2026 LoRaFlexSim – <a href="https://www.univ-bobo.gov.bf/" target="_blank" rel="noopener noreferrer">Nazi Bony University</a>.</p>
+        <p class="footer-links"><a href="https://www.python.org/" target="_blank" rel="noopener noreferrer">Python</a> <span class="footer-separator" aria-hidden="true">|</span> <a href="https://fasanou.netlify.app/" target="_blank" rel="noopener noreferrer">Sanou François d'Assise</a></p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
